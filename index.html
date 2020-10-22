@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ya po shesho no sé po</title>
+
+    <meta name="description" content="UwU">
+    <meta name="author" content="Cuyi">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1> Calculo cilindro</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/cilindro.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radiocilindro">Radio (r)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radiocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="alturacilindro">Altura (h)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="alturacilindro" placeholder="(cm)">
+      </div>
+    </div>
+  
+    <div class = "row mb-2">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" onclick="volumenCilindro()">Calcular!</button>
+      </div>
+      <div class="col">
+        <p class="text-monospace" id="resultadoCilindro"></p>
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col">
+        <p class="text-monospace">Nota: El radio es la mitad del diametro (Ver dibujo final de página)</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <h1> Calculo Tronco</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/tronco.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radiocilindro">radio 1 (r)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio1tronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio2tronco">Radio 2 (R)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio2tronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="alturatronco">Altura (h)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="alturatronco" placeholder="(cm)">
+      </div>
+    </div>
+  
+    <div class = "row mb-2">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" onclick="volumenTronco()">Calcular!</button>
+      </div>
+      <div class="col">
+        <p class="text-monospace" id="resultadotronco"></p>
+  
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col">
+        <p class="text-monospace">Nota: No importa el orden en que se ingresen los radios</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <h1> Calculo 2 Troncos</h1>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <img src="images/dostroncos.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio1dostroncos">radio 1 (r1)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio1dostronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio2dostronco">Radio 2 (r2)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio2dostronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio2dostronco">Radio 3 (r3)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio3dostronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="altura1dostronco">Altura 1 (h1)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="altura1dostronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="altura2dostronco">Altura 2 (h2)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="altura2dostronco" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" onclick="volumendosTronco()">Calcular!</button>
+      </div>
+      <div class="col">
+        <p class="text-monospace" id="resultadodostronco"></p>
+
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col">
+        <p class="text-monospace">Nota: En este si importa el orden en que se ingresen los radios</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1> Calculo 2 Troncos y 1 cilindro</h1>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <img src="images/dostroncosyuncilindro.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio1dostroncos">radio 1 (r1)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio1dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio2dostronco">Radio 2 (r2)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio2dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="radio2dostronco">Radio 3 (r3)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="radio3dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="alturadostronco">Altura 1 (h1)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="altura1dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="alturadostronco">Altura 2 (h2)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="altura2dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="alturadostronco">Altura 3 (h3)</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="altura3dostroncocilindro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" onclick="volumendosTroncocilindro()">Calcular!</button>
+      </div>
+      <div class="col">
+        <p class="text-monospace" id="resultadodostroncocilindro"></p>
+
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col">
+        <p class="text-monospace">Nota: Los diametros de al medio son iguales</p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <h1> Otros</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/perimetro.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h5> Calculo radio dado el perímetro</h5>
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <label for="Perimetro">Perímetro</label>
+      </div>
+      <div class="col">
+        <input type="number" step="any" class="form-control" id="perimetro" placeholder="(cm)">
+      </div>
+    </div>
+    <div class = "row mb-2">
+      <div class="col-4">
+        <button type="button" class="btn btn-primary" onclick="calculoradio()">Calcular radio</button>
+      </div>
+      <div class="col">
+        <p class="text-monospace" id="resultadoradio"></p>
+      </div>
+    </div>
+    
+    <div class = "row mb-2">
+      <div class="col">
+        <p class="text-monospace">Perimetro = 2*pi*radio</p>
+        <p class="text-monospace">Diametro = 2*radio</p>
+        <p class="text-monospace">radio  = diametro/2
+      </div>
+    </div> 
+
+  </div>
+		
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
