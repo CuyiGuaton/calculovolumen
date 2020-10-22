@@ -26,6 +26,7 @@
           <li>Troncos</li>
           <li>Dos troncos unidos</li>
           <li>Dos troncos y un cilindro</li>
+          <li>Cuatro troncos</li>
         </ul>
         <p>Se utiliza el radio, que equivale a la mitad del diametro, hay un dibujo al final de la página con las partes de la circunferencia.</p>
       </div>
@@ -278,9 +279,96 @@
       </div>
     </div>
   </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="radio1cuatrotroncos">radio 1 (r1)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="radio1cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="radio2cuatrotronco">Radio 2 (r2)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="radio2cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="radio2cuatrotronco">Radio 3 (r3)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="radio3cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="radio2cuatrotronco">Radio 4 (r4)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="radio4cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="radio2cuatrotronco">Radio 5 (r5)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="radio5cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="altura1cuatrotronco">Altura 1 (h2)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="altura1cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="altura2cuatrotronco">Altura 2 (h2)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="altura2cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="altura2cuatrotronco">Altura 3 (h2)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="altura3cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <label for="altura2cuatrotronco">Altura 4 (h2)</label>
+    </div>
+    <div class="col">
+      <input type="number" step="any" class="form-control" id="altura4cuatrotronco" placeholder="(cm)">
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col-4">
+      <button type="button" class="btn btn-primary" onclick="volumencuatroTroncos()">Calcular!</button>
+    </div>
+    <div class="col">
+      <p class="text-monospace" id="resultadocuatrotronco"></p>
 
-  <hr>
+    </div>
+  </div>
+  <div class = "row mb-2">
+    <div class="col">
+      <p class="text-monospace">Nota:Si importa el orden en que se ingresen los radios</p>
+    </div>
+  </div>
+
   
+  <hr>
+
     <div class="row mb-4">
       <div class="col-md-12">
         <h2> Otros</h2>
